@@ -6,6 +6,10 @@ namespace ProductManager
 
         public string NomeProduto { get; private set; }
 
+        public float Preco { get; set; }
+
+        public DateTime DataCadastro { get; private set; }
+
         public string Cadastrar()
         {
             return "0";
