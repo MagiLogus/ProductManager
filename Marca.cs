@@ -6,16 +6,33 @@ namespace ProductManager
 
         public string NomeMarca { get; private set; }
 
-        public float preco { get; private set; }
+        public DateTime DataCadastro { get; private set; }
 
-        public string Cadastrar()
+        List<Marca> listaDeMarcas = new List<Marca>();
+
+        public string Cadastrar(Marca marca)
         {
             return "0";
         }
 
-        public string Deletar()
+        public void Listar()
+        {
+
+        }
+
+
+
+        public string Deletar(Marca marca)
         {
             return "0";
+        }
+
+        public Marca Cadastrar(Marca marca)
+        {
+            return marca;
         }
     }
 }
+
+
+
