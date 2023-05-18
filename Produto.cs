@@ -1,3 +1,5 @@
+using ProductManager;
+
 namespace ProductManager
 {
     public class Produto
@@ -12,13 +14,50 @@ namespace ProductManager
 
         public string Cadastrar()
         {
-            return "0";
-            //aqui vai a logica usando as variaveis 
+            Produto produto = new Produto();
+
+            Console.WriteLine($"Insira o codigo do produto: ");
+            produto.Codigo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Insira o nome do produto: ");
+            produto.NomeProduto = Console.ReadLine();
+
+            Console.WriteLine($"Insira o preco do produto: ");
+            produto.Preco = float.Parse(Console.ReadLine());
+
+            produto.DataCadastro = DateTime.UtcNow;
+
+            produto.Marca = Marca.Cadastrar();
+
+            produto.CadastradoPor = new Usuario();
+
+            listaDeProdutos.Add(produto);
+
+            Console.WriteLine($"Produto cadastrado com sucesso");
+
+            return "";
         }
 
-        public string Deletar() //codigo ou produto 
+        public void Listar()
         {
-            return "0";
+            Console.WriteLine($"Lista de produtos: ");
+
+            foreach (Produto item in listaDeProdutos)
+            {
+                Console.WriteLine(@$"
+                Codigo: {item.Codigo}
+                Nome: {item.NomeProduto}
+                Preco: {item.Preco}
+                Cadastrado em : {item.DataCadastro}
+                ");
+            }
+
+        }
+
+        public string Deletar(int Codigo)
+        {
+            return $"O produto xxxx foi deletado";
+            ;
         }
 
     }

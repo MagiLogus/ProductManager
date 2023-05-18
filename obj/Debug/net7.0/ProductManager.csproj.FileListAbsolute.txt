@@ -1,0 +1,15 @@
+C:\Users\33984578865\Desktop\ProductManager\bin\Debug\net7.0\ProductManager.exe
+C:\Users\33984578865\Desktop\ProductManager\bin\Debug\net7.0\ProductManager.deps.json
+C:\Users\33984578865\Desktop\ProductManager\bin\Debug\net7.0\ProductManager.runtimeconfig.json
+C:\Users\33984578865\Desktop\ProductManager\bin\Debug\net7.0\ProductManager.dll
+C:\Users\33984578865\Desktop\ProductManager\bin\Debug\net7.0\ProductManager.pdb
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.csproj.AssemblyReference.cache
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.AssemblyInfoInputs.cache
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.AssemblyInfo.cs
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.csproj.CoreCompileInputs.cache
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.dll
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\refint\ProductManager.dll
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.pdb
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ProductManager.genruntimeconfig.cache
+C:\Users\33984578865\Desktop\ProductManager\obj\Debug\net7.0\ref\ProductManager.dll

@@ -10,9 +10,11 @@ namespace ProductManager
 
         List<Marca> listaDeMarcas = new List<Marca>();
 
-        public string Cadastrar(Marca marca)
+        public Marca Cadastrar()
         {
-            return "0";
+            Marca marca = new Marca();
+            return marca;
+            
         }
 
         public void Listar()
@@ -20,16 +22,9 @@ namespace ProductManager
 
         }
 
-
-
-        public string Deletar(Marca marca)
+        public string Deletar()
         {
-            return "0";
-        }
-
-        public Marca Cadastrar(Marca marca)
-        {
-            return marca;
+            return "Marca deletada com sucesso !";
         }
     }
 }

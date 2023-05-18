@@ -6,21 +6,27 @@ namespace ProductManager
         public string Nome { get; private set; }
         public string Email { get; private set; }
         public string Senha { get; private set; }
-        public DateTime DataCadastro { get; private set; } 
+        public DateTime DataCadastro { get; private set; }
 
-        public Usuario ()
+        public Usuario()
         {
-        Cadastrar();
+            Cadastrar();
         }
 
-        public string Cadastrar(Usuario usuario)
+        public string Cadastrar()
         {
-            return "0";
+            Nome = "Paulo";
+            Email = "paulo";
+            Senha = "123";
+            return "Usuario Cadastrado com Sucesso !";
         }
 
-        public string Deletar(Usuario usuario)
+        public string Deletar()
         {
-            return "0";
+            Nome = "";
+            Email = "";
+            Senha = "";
+            return "usuario deletado !";
         }
     }
 }

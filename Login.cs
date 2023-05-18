@@ -1,13 +1,16 @@
+using ProductManager;
+
 namespace ProductManager
 {
     public class Login
     {
         public bool Logado { get; private set; }
 
+        Usuario user = new Usuario();
+
         public Login()
         {
-            Usuario usuario = new Usuario();
-            Logar();
+            Logar(user);
 
             if (Logado)
             {
@@ -15,7 +18,7 @@ namespace ProductManager
             }
         }
 
-        public string Logar()
+        public string Logar(Usuario usuario)
         {
             Console.WriteLine($"Insira seu Email: ");
             string email = Console.ReadLine();
@@ -23,7 +26,18 @@ namespace ProductManager
             Console.WriteLine($"Insira sua senha: ");
             string senha = Console.ReadLine();
 
-            return $"Usuário logado !";
+            if (usuario != null && user.Email == email && user.Senha == senha)
+            {
+                Logado = true;
+                Console.WriteLine($"Usuario Logado !");
+            }
+            else
+            {
+                Logado = false;
+                Console.WriteLine($"nenhum usuario encontrado");
+            }
+
+            return "";
         }
 
         public void Menu()
@@ -51,20 +65,30 @@ namespace ProductManager
                 switch (opcao)
                 {
                     case 1:
+                        produto.Cadastrar();
                         break;
+
                     case 2:
                         break;
+
                     case 3:
                         break;
+
                     case 4:
                         break;
+
                     case 5:
                         break;
+
                     case 6:
                         break;
+
                     case 0:
+                        Deslogar();
                         break;
+
                     default:
+                        Console.WriteLine($"opcao invalida");
                         break;
                 }
 
@@ -74,7 +98,8 @@ namespace ProductManager
         public string Deslogar()
         {
             Logado = false;
-            return $"Usuário deslogado !";
+            Console.WriteLine($"Usuário deslogado !");
+            return $"";
         }
     }
 }
