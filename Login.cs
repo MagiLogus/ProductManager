@@ -5,7 +5,6 @@ namespace ProductManager
     public class Login
     {
         public bool Logado { get; private set; }
-
         Usuario user = new Usuario();
 
         public Login()
@@ -69,15 +68,18 @@ namespace ProductManager
                         break;
 
                     case 2:
+                        produto.Listar();
                         break;
 
                     case 3:
                         break;
 
                     case 4:
+                        marca.Cadastrar();
                         break;
 
                     case 5:
+                    marca.Listar();
                         break;
 
                     case 6:

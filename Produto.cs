@@ -47,7 +47,7 @@ namespace ProductManager
                 Console.WriteLine(@$"
                 Codigo: {item.Codigo}
                 Nome: {item.NomeProduto}
-                Preco: {item.Preco}
+                Preco: {item.Preco:C}
                 Cadastrado em : {item.DataCadastro}
                 ");
             }

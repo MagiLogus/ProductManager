@@ -7,6 +7,7 @@ namespace ProductManager
         public string Email { get; private set; }
         public string Senha { get; private set; }
         public DateTime DataCadastro { get; private set; }
+        public static List<Usuario> listaDeUsuarios = new List<Usuario>();
 
         public Usuario()
         {
@@ -15,10 +16,27 @@ namespace ProductManager
 
         public string Cadastrar()
         {
-            Nome = "Paulo";
-            Email = "paulo";
-            Senha = "123";
-            return "Usuario Cadastrado com Sucesso !";
+            Usuario usuario = new Usuario();
+
+            Console.WriteLine($"Cadastro de usuario: ");
+
+            Console.WriteLine($"Digite o codigo que deseja cadstrar:");
+            usuario.Codigo = int.Parse(Console.ReadLine());
+            
+            Console.WriteLine($"Digite o nome que deseja cadstrar: ");
+            usuario.Nome = Console.ReadLine();
+
+            Console.WriteLine($"Digite o email que deseja cadstrar:");
+            usuario.Email = Console.ReadLine();
+
+            Console.WriteLine($"Digite a senha que deseja cadstrar:");
+            usuario.Senha = Console.ReadLine();
+
+            listaDeUsuarios.Add(usuario);
+
+            Console.WriteLine($"Usuario Cadastrado com Sucesso !");
+
+            return "";
         }
 
         public string Deletar()
@@ -26,7 +44,10 @@ namespace ProductManager
             Nome = "";
             Email = "";
             Senha = "";
-            return "usuario deletado !";
+
+            Console.WriteLine($"usuario deletado !");
+
+            return "";
         }
     }
 }
